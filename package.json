@@ -1,0 +1,35 @@
+{
+  "name": "semantic-ui-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node app.js",
+    "devBuild": "webpack --config webpack.config.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erkanAslanel/semantic-ui-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erkanAslanel/semantic-ui-test/issues"
+  },
+  "homepage": "https://github.com/erkanAslanel/semantic-ui-test",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react-es2015": "^1.2.0",
+    "webpack": "^2.4.1"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "semantic-ui-css": "^2.2.10",
+    "semantic-ui-react": "^0.67.2"
+  }
+}
