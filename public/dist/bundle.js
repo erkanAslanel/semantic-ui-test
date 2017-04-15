@@ -25819,6 +25819,7 @@ process.env.NODE_ENV !== "production" ? StatisticValue.propTypes = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.ButtonExampleEmphasis = undefined;
 
 var _react = __webpack_require__(1);
 
@@ -25832,6 +25833,7 @@ var ButtonExampleEmphasis = function ButtonExampleEmphasis() {
   return _react2.default.createElement(
     'div',
     null,
+    ' ',
     _react2.default.createElement(
       _semanticUiReact.Button,
       { primary: true },
@@ -25845,7 +25847,7 @@ var ButtonExampleEmphasis = function ButtonExampleEmphasis() {
   );
 };
 
-exports.default = ButtonExampleEmphasis;
+exports.ButtonExampleEmphasis = ButtonExampleEmphasis;
 
 /***/ }),
 /* 425 */
@@ -25864,11 +25866,9 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _button = __webpack_require__(424);
 
-var _button2 = _interopRequireDefault(_button);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(_button2.default, null), document.getElementById('app'));
+_reactDom2.default.render(_react2.default.createElement(_button.ButtonExampleEmphasis, null), document.getElementById('app'));
 
 /***/ }),
 /* 426 */

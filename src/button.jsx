@@ -1,11 +1,9 @@
-import React from 'react'
-import { Button } from 'semantic-ui-react'
+import React from 'react';
+import { Button } from 'semantic-ui-react';
 
-const ButtonExampleEmphasis = () => (
-  <div>
-    <Button primary>Primary</Button>
-    <Button secondary>Secondary</Button>
-  </div>
-)
+ var  ButtonExampleEmphasis = ()  =>
+{
+  return  <div> <Button primary>Primary</Button><Button secondary>Secondary</Button></div>;
+}
 
-export default ButtonExampleEmphasis
+export {ButtonExampleEmphasis};
