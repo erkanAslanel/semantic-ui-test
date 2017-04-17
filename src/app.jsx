@@ -1,11 +1,34 @@
+import React  from 'react';
+import {render} from 'react-dom';
 
-import React from 'react'
-import ReactDOM from 'react-dom';
-import { Button } from 'semantic-ui-react';
 
-var  ButtonExampleEmphasis = ()  =>
-{
- return  <div> <Button primary>Primary</Button><Button secondary>Secondary</Button></div>;
-}
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
-ReactDOM.render(<ButtonExampleEmphasis />, document.getElementById('app'));
+
+import Home from './layout/home/home.jsx';
+
+render(
+    <Router>
+    <div>
+        <ul>
+            <li>
+                <Link to="/">Home</Link>
+            </li>
+            <li>
+                <Link to="/about">About</Link>
+            </li>
+            <li>
+                <Link to="/topics">Topics</Link>
+            </li>
+        </ul>
+
+        <hr/>
+
+        <Route exact path="/" component={Home}/>
+
+    </div>
+</Router>, document.getElementById('app'));
